@@ -1,0 +1,24 @@
+/* Default styles for larger screens */
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For mobile devices (480px and below) */
+@media (max-width: 480px) {
+    body {
+        grid-template-columns: 1fr;
+        font-size: 14px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
